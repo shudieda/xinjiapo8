@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 1080px;
+            overflow: hidden;
+            height: 1923px;
+        }
+
+        @font-face {
+            font-family: PingFang;
+            src: url("font/PingFang Heavy.ttf");
+        }
+        @font-face {
+            font-family: 英文;
+            src: url("font/cordiab.ttf");
+        }
+        @font-face {
+            font-family: 方正黑;
+            src: url("font/方正黑.ttf");
+        }
+
+        @font-face {
+            font-family: 苹方香港;
+            src: url("font/苹方香港.ttf");
+        }
+        @font-face {
+            font-family: 汉仪雅酷黑65W;
+            src: url("font/Barlow-Regular.otf");
+        }
+        .ao1:hover {
+            background-image: url('img/1x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao1 img:hover{
+            opacity: 0;
+        }
+
+        .ao2:hover {
+            background-image: url('img/2x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao2 img:hover{
+            opacity: 0;
+        }
+
+        .ao3:hover {
+            background-image: url('img/3x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao3 img:hover{
+            opacity: 0;
+        }
+
+        .ao4:hover {
+            background-image: url('img/4x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao4 img:hover{
+            opacity: 0;
+        }
+
+        .ao5:hover {
+            background-image: url('img/5x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao5 img:hover{
+            opacity: 0;
+        }
+
+        .ao6:hover {
+            background-image: url('img/6x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao6 img:hover{
+            opacity: 0;
+        }
+
+        .ao7:hover {
+            background-image: url('img/7x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao7 img:hover{
+            opacity: 0;
+        }
+
+        .ao8:hover {
+            background-image: url('img/8x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao8 img:hover{
+            opacity: 0;
+        }
+
+        .ao9:hover {
+            background-image: url('img/9x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao9 img:hover{
+            opacity: 0;
+        }
+
+        .ao10:hover {
+            background-image: url('img/10x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao10 img:hover{
+            opacity: 0;
+        }
+
+        .ao11:hover {
+            background-image: url('img/11x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao11 img:hover{
+            opacity: 0;
+        }
+
+        .ao12:hover {
+            background-image: url('img/12x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao12 img:hover{
+            opacity: 0;
+        }
+
+        .ao13:hover {
+            background-image: url('img/13x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao13 img:hover{
+            opacity: 0;
+        }
+
+        .ao14:hover {
+            background-image: url('img/14x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao14 img:hover{
+            opacity: 0;
+        }
+
+        .ao15:hover {
+            background-image: url('img/15x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao15 img:hover{
+            opacity: 0;
+        }
+
+        .ao16:hover {
+            background-image: url('img/16x.png');
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 170px;
+            z-index: 9999;
+        }
+        .ao16 img:hover{
+            opacity: 0;
+        }
+
+    </style>
+</head>
+<body oncontextmenu=self.event.returnValue=false style="background-color: rgb(218,185,149)">
+<button class="save-img" onclick="savaData()"
+        style="color: rgb(218,185,149); position: absolute;border: none; padding:5px 5px 5px 5px;font-weight:550;background-color: transparent;border-radius:10px;margin-left:1300px; font-size: 35px;">保存图片
+</button>
+<div class="box">
+    <div style="background-image: url('img/xinjiapo8.png');height: 1923px;width: 1080px;display: flex;position:relative;">
+        <div contenteditable class="text7902" style="font-weight:; font-family: 汉仪雅酷黑65W;position:absolute;display: inline-block;left: 122px; top:873px; margin-left: auto;color: rgb(0,0,0);font-size: 70px;">+658914****</div>
+        <div contenteditable class="text7903" style="font-weight:600; font-family: 汉仪雅酷黑65W;position:absolute;display: inline-block;left: 122px; top:957px;color: rgb(0,0,0);font-size: 108px;">S$630.00</div>
+        <div contenteditable class="text7904" style="font-weight:; font-family: 汉仪雅酷黑65W;position:absolute;display: inline-block;left: 122px; top:1107px;color: rgb(98,149,142);font-size: 38px;">View Transaction Details</div>
+
+
+
+    </div>
+</div>
+
+<div style="position: absolute;left: 1100px;top: -100px;width: 1000px;height: 2000px;">
+
+    <div style="display: inline-block; position: absolute;right: 700px;top: 300px; font-size: 40px;">Paid：
+        <div class="textG270" contenteditable
+             style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">+658914****</div>
+    </div>
+
+    <div style="display: inline-block; position: absolute;right: 700px;top: 450px; font-size: 39px;">：
+        <div class="textG271" contenteditable
+             style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 42px;width: 700px;background-color: #FFFFFF;">S$630.00</div>
+    </div>
+
+    <div style="display: inline-block; position: absolute;right: 700px;top:600px; font-size: 45px;">：
+        <div class="textG272" contenteditable
+             style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 42px;width: 700px;background-color: #FFFFFF;">View Transaction Details</div>
+    </div>
+
+</div>
+
+<div style="position: absolute;left:2110px;top:150px;width: 500px;height: 2000px;">
+
+    <a class="ao1" href="http://sblaojiaoshu.com/xinjiapo1/" style="position: absolute; top:100px;left: 20px;">
+        <img src="img/1.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao2" href="http://sblaojiaoshu.com/xinjiapo2/" style="position: absolute; top:100px;left: 250px;">
+        <img src="img/2.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao3" href="http://sblaojiaoshu.com/xinjiapo3/" style="position: absolute; top:100px;left: 480px;">
+        <img src="img/3.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao4" href="http://sblaojiaoshu.com/xinjiapo4/" style="position: absolute; top:320px;left: 20px;">
+        <img src="img/4.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao5" href="http://sblaojiaoshu.com/xinjiapo5/" style="position: absolute; top:320px;left: 250px;">
+        <img src="img/5.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao6" href="http://sblaojiaoshu.com/xinjiapo6/" style="position: absolute; top:320px;left: 480px;">
+        <img src="img/6.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao7" href="http://sblaojiaoshu.com/xinjiapo7/" style="position: absolute; top:540px;left: 20px;">
+        <img src="img/7.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao8" href="http://sblaojiaoshu.com/xinjiapo8/" style="position: absolute; top:540px;left: 250px;">
+        <img src="img/8x.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao9" href="http://sblaojiaoshu.com/xinjiapo9/" style="position: absolute; top:540px;left: 480px;">
+        <img src="img/9.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao10" href="http://sblaojiaoshu.com/xinjiapo10/" style="position: absolute; top:760px;left: 20px;">
+        <img src="img/10.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao11" href="http://sblaojiaoshu.com/xinjiapo11/" style="position: absolute; top:760px;left: 250px;">
+        <img src="img/11.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao12" href="http://sblaojiaoshu.com/xinjiapo12/" style="position: absolute; top:760px;left: 480px;">
+        <img src="img/12.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao13" href="http://sblaojiaoshu.com/xinjiapo13/" style="position: absolute; top:980px;left: 20px;">
+        <img src="img/13.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao14" href="http://sblaojiaoshu.com/xinjiapo14/" style="position: absolute; top:980px;left: 250px;">
+        <img src="img/14.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao15" href="http://sblaojiaoshu.com/xinjiapo15/" style="position: absolute; top:980px;left: 480px;">
+        <img src="img/15.png" style="width: 200px; height: 170px;">
+    </a>
+
+    <a class="ao16" href="http://sblaojiaoshu.com/xinjiapo16/" style="position: absolute; top:1200px;left: 20px;">
+        <img src="img/16.png" style="width: 200px; height: 170px;">
+    </a>
+
+</div>
+
+<!-- 引入 html2canvas -->
+<script src="html2canvas.js"></script>
+<!-- 引入自行封装的截图插件 -->
+<script src="screen-shot-az.js"></script>
+
+<script>
+    var ua = navigator.userAgent;
+    if(ua !== "Mozilla/5.0 (Windows NT 10.0; Win64; x64; ed)"){
+        document.querySelector("body").style="display: none;"
+    }
+</script>
+
+<script>
+    // 获取组件盒子
+    let box = document.querySelector('.box')
+
+    // 获取保存按钮
+    let saveImg = document.querySelector('.save-img')
+
+    // 点击保存按钮
+    saveImg.addEventListener('click', () => {
+        saveImgFn('微信图片')
+    })
+
+    // 保存图片的方法
+    async function saveImgFn(downloadName) {
+        // 获取需要转换的dom
+        // html2canvas(document.querySelector('.bbx'))
+        //     .then(canvas => {
+        //         let imgUrl = canvas.toDataURL('image/jpg')
+        //         let image = document.createElement('img')
+        //         image.src = imgUrl
+        //         let a = document.createElement('a')
+        //         a.href = imgUrl
+        //         a.download = name // 自定义名称
+        //         a.click()
+        //     })
+
+        // 截图模块
+        let canvasBox = document.querySelector('.box')
+        // 使用自定义方法进行转换
+        await getHtmlImage({canvasBox,downloadName})
+
+    }
+
+</script>
+
+<script>
+
+    let text1 = document.querySelector(".text7902")
+    let text2 = document.querySelector(".textG270")
+
+    twoWayBinding(text1, text2)
+    twoWayBinding(text2, text1)
+
+    function twoWayBinding(ele1, ele2) {
+        ele1.addEventListener('input', () => {
+            ele2.innerText = ele1.innerText
+        })
+    }
+</script>
+
+<script>
+
+    let text3 = document.querySelector(".text7903")
+    let text4 = document.querySelector(".textG271")
+
+    twoWayBinding(text3, text4)
+    twoWayBinding(text4, text3)
+
+    function twoWayBinding(ele1, ele2) {
+        ele1.addEventListener('input', () => {
+            ele2.innerText = ele1.innerText
+        })
+    }
+</script>
+
+<script>
+
+    let text5 = document.querySelector(".text7904")
+    let text6 = document.querySelector(".textG272")
+
+    twoWayBinding(text5, text6)
+    twoWayBinding(text6, text5)
+
+    function twoWayBinding(ele1, ele2) {
+        ele1.addEventListener('input', () => {
+            ele2.innerText = ele1.innerText
+        })
+    }
+</script>
+
+<script>
+    // 需要保存数据的元素
+
+    let text7902 = document.querySelector('.text7902')
+    let text7903 = document.querySelector('.text7903')
+    let text7904 = document.querySelector('.text7904')
+
+
+    let textG270 = document.querySelector('.textG270')
+    let textG271 = document.querySelector('.textG271')
+    let textG272 = document.querySelector('.textG272')
+
+    getData()
+
+    // 页面初始化获取文字
+    function getData() {
+
+        let localText7902 = localStorage.getItem('text7902')
+        let localText7903 = localStorage.getItem('text7903')
+        let localText7904 = localStorage.getItem('text7904')
+
+
+        let localTextG270 = localStorage.getItem('textG270')
+        let localTextG271 = localStorage.getItem('textG271')
+        let localTextG272 = localStorage.getItem('textG272')
+
+
+
+        if (localText7902) text7902.innerText = localText7902
+        if (localText7903) text7903.innerText = localText7903
+        if (localText7904) text7904.innerText = localText7904
+
+
+
+        if (localTextG270) textG270.innerText = localTextG270
+        if (localTextG271) textG271.innerText = localTextG271
+        if (localTextG272) textG272.innerText = localTextG272
+
+    }
+
+
+    // 保存数据的方法
+    function savaData() {
+        localStorage.setItem('text7902', text7902.innerText)
+        localStorage.setItem('text7903', text7903.innerText)
+        localStorage.setItem('text7904', text7904.innerText)
+
+
+        localStorage.setItem('textG270', textG270.innerText)
+        localStorage.setItem('textG271', textG271.innerText)
+        localStorage.setItem('textG272', textG272.innerText)
+
+    }
+
+</script>
+</body>
+</html>
